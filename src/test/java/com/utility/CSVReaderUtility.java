@@ -19,6 +19,7 @@ public class CSVReaderUtility {
 		CSVReader csvReader;
 		String[] line;
 		List<Users> userList = new ArrayList<Users>();
+		
 		Users users;
 		try {
 			fileReader = new FileReader(csvFile);
