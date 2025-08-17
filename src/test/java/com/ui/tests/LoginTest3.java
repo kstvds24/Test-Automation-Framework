@@ -21,13 +21,13 @@ public class LoginTest3 extends TestBase {
 
 	}
 
-//	@Test(description = "Verifies if valid user is able to login into the application", groups = { "e2e",
-//			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
-//	public void LoginTestCSVData(Users users) {
-//		assertEquals(homePage.goToLoginPage().login(users.getEmailAddress(), users.getPassword()).getUserName(),
-//				"Kaustav Das");
-//
-//	}
+	@Test(description = "Verifies if valid user is able to login into the application", groups = { "e2e",
+			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
+	public void LoginTestCSVData(Users users) {
+		assertEquals(homePage.goToLoginPage().login(users.getEmailAddress(), users.getPassword()).getUserName(),
+				"Kaustav Das");
+
+	}
 //
 //	@Test(description = "Verifies if valid user is able to login into the application", groups = { "e2e",
 //			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
